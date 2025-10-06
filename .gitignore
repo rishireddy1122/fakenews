@@ -1,0 +1,20 @@
+# Ignore Virtual Environment
+.venv/
+venv/
+env/
+
+# Ignore Data Files (BuzzFeed & PolitiFact datasets + archives)
+archive/
+BuzzFeed*
+PolitiFact*
+
+# Ignore System / Temporary Files
+__pycache__/
+*.pyc
+*.DS_Store
+
+# Ignore Config Files
+pyvenv.cfg
+
+# Ignore Logs & Outputs
+*.log
