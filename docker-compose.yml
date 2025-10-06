@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fakenews-api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
