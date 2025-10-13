@@ -48,19 +48,20 @@ fake-news-detector/
 
 Clone the repository:
 
-
-git clone https://github.com/rishireddy1122/fakenews
-
+```bash
+git clone https://github.com/yourusername/fake-news-detector.git
+cd fake-news-detector
+```
 
 Create a virtual environment and install dependencies:
 
-
+```bash
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 source .venv/bin/activate   # Mac/Linux
 
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -68,9 +69,9 @@ pip install -r requirements.txt
 
 Run the training script to build and save the pipeline:
 
-
+```bash
 python train_model.py
-
+```
 
 This will create `fake_news_pipeline.pkl`.
 
@@ -78,9 +79,9 @@ This will create `fake_news_pipeline.pkl`.
 
 ## Running the App Locally
 
-
+```bash
 streamlit run app.py
-
+```
 
 Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
@@ -97,11 +98,11 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ## Example Predictions
 
-Single Article
+**Single Article**
 Input: "NASA confirms discovery of water on Mars"
 Output: Real News (Confidence: 92.5%)
 
-CSV Upload
+**CSV Upload**
 
 | Article Text                              | Prediction | Confidence |
 | ----------------------------------------- | ---------- | ---------- |
